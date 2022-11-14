@@ -12,7 +12,7 @@ function Authors() {
     const [currentAuthor, setCurrentAuthor] = useState(formState);
 
     useEffect(() => {
-        fetch("http://localhost:9292/authors")
+        fetch("https://bravo-library01.herokuapp.com/authors")
         .then(res => res.json())
         .then(setAuthors)
     },[])

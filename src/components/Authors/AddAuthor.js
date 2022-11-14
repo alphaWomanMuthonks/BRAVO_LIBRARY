@@ -25,7 +25,7 @@ const AddAuthor = (props) => {
         props.addAuthor(author)
         setAuthor(formState)
         
-        fetch("http://localhost:9292/authors", {
+        fetch("https://bravo-library01.herokuapp.com/authors", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
