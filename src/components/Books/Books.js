@@ -12,7 +12,7 @@ function Books() {
   const [currentBook, setCurrentBook] = useState(formState);
 
   useEffect(() => {
-    fetch("http://localhost:9292/books")
+    fetch("https://bravo-library01.herokuapp.com/books")
     .then(res => res.json())
     .then(setBooks)
   },[])
@@ -39,7 +39,7 @@ function Books() {
     setEdit(false);
     setBooks(books.filter(book => book.id !== id))
 
-    fetch(`http://localhost:9292/books/${id}`, {
+    fetch(`https://bravo-library01.herokuapp.com/books/${id}`, {
       method: "DELETE"
     })
   }

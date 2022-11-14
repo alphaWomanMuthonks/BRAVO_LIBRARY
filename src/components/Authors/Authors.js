@@ -39,7 +39,7 @@ function Authors() {
         setEdit(false);
         setAuthors(authors.filter(author => author.id !== id))
 
-        fetch(`http://localhost:9292/authors/${id}`, {
+      fetch(`https://bravo-library01.herokuapp.com/authors/${id}`, {
           method: "DELETE"
         })
     }

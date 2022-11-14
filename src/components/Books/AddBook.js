@@ -28,7 +28,7 @@ const Addbook = (props) => {
         props.addBook(book)
         setBook(formState)
         
-        fetch("http://localhost:9292/books", {
+        fetch("https://bravo-library01.herokuapp.com/books", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",

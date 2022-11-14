@@ -21,7 +21,7 @@ const EditBook = (props) => {
         e.preventDefault();
         props.updateBook(book.id, book)
         
-        fetch(`http://localhost:9292/books/${book.id}`, {
+        fetch(`https://bravo-library01.herokuapp.com/books/${book.id}`, {
             method: "PATCH",
             headers: {
             "Content-Type": "application/json",
